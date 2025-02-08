@@ -18,10 +18,9 @@ return new class extends Migration
             $table->foreignId('user_id')->constrained('users')->onUpdate('cascade')->onDelete('cascade');  
             $table->date('loans_date');
             $table->date('return_date');
-            $table->string('status');      
-    });        
+            $table->string('status');
+    });
     }
-
     /**
      * Reverse the migrations.
      */
